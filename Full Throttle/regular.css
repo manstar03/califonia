@@ -1,0 +1,1161 @@
+html, body {
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+body{
+    margin: 0;
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+}
+/*Menu Start*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', 'Arial', sans-serif;
+}
+
+
+
+.menu {
+    background-color: #f8fafa;
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    display: block;
+    padding: 0;
+}
+
+.navigation {
+    padding: 0;
+}
+.logo {
+    color: #141415;
+    float: left;
+    width: auto;
+    border: none;
+    outline: 0;
+    padding: 8px 16px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 5px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+.navigation a {
+    color: #0a0a0a;
+    text-decoration: none;
+    padding-left: 16px;
+}
+
+.menu ul{
+    float:right;
+    padding: 0;
+    margin: 7px 0 0px;
+
+}
+.menu li{
+    /* float: right;*/
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    margin-top:10px;
+    float: left;
+    font-size: 15px;
+}
+
+
+.navigation_button {
+
+    margin-right: 20px;
+    margin-left: 20px;
+
+    float: right;
+}
+
+
+
+
+ .material-symbols-rounded {
+     font-variation-settings:
+             'FILL' 1,
+             'wght' 700,
+             'GRAD' 200,
+             'opsz' 20
+ }
+
+
+
+@media screen and (min-width: 768px) {
+
+    .mobile_nav{
+        display: none;
+       /* margin-left: 8px;*/
+    }
+
+}
+
+
+@media screen and (max-width: 841px) {
+
+    .logo {
+        margin-right: 16px;
+        margin-left: 12px;
+        margin-top: 7px;
+     }
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+    .menu ul {
+        display: none;
+
+    }
+
+    .mobile_nav {
+        float: right;
+        margin-right: 50px;
+        margin-top: 13px;
+        font-size: 18px;
+    }
+}
+
+
+@media screen and (max-width: 453px) {
+
+
+    .mobile_nav {
+        float: right;
+        margin-right: 15px;
+        margin-top: 18px;
+        font-size: 20px !important;
+    }
+    .logo {
+        margin-left: -3px;
+        margin-top: 7px;
+
+    }
+}
+
+/*Fold Devices*/
+@media screen and (max-width: 303px) {
+
+    .logo {
+        margin-left: -11px;
+        margin-right: 2px;
+        margin-top: 11px;
+
+    }
+}
+
+
+
+/***************************************** The side navigation menu ****************************/
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+/************************************ End side navigation menu*******************/
+
+/********************Hero Slider Start**************************/
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(14, 29, 51, 0.8), rgba(14, 29, 51, 0.2));
+}
+
+.hero-slider {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 44px;
+}
+.hero-slider .carousel-cell {
+    width: 100%;
+    height: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.hero-slider .carousel-cell .inner {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    text-align: center;
+}
+.hero-slider .carousel-cell .inner .subtitle {
+    font-family: "Roboto Slab", serif;
+    font-size: 2.2rem;
+    line-height: 1.2em;
+    font-weight: 200;
+    font-style: italic;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 5px;
+}
+.hero-slider .carousel-cell .inner .title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+}
+.hero-slider .carousel-cell .inner .btn {
+    border: 1px solid #fff;
+    padding: 14px 18px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+.hero-slider .carousel-cell .inner .btn:hover {
+    background: #fff;
+    color: #000;
+}
+.hero-slider .flickity-prev-next-button {
+    width: 80px;
+    height: 80px;
+    top: 39%;
+    background: transparent;
+}
+.hero-slider .flickity-prev-next-button:hover {
+    background: transparent;
+}
+.hero-slider .flickity-prev-next-button .arrow {
+    fill: white;
+}
+.hero-slider .flickity-page-dots {
+    bottom: 343px;
+}
+.hero-slider .flickity-page-dots .dot {
+    width: 30px;
+    height: 4px;
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.5);
+    border: 0 solid white;
+    border-radius: 0;
+}
+.hero-slider .flickity-page-dots .dot.is-selected {
+    background: #ff0000;
+    border: 0 solid #ff0000;
+}
+
+/********************Hero Slider End**************************/
+/***************************Hero Video Start*********************/
+
+
+
+
+
+
+/* Style the video: 100% width and height to cover the entire window */
+/*#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+
+
+    overflow: hidden;
+    display: inline-block;
+
+}*/
+
+
+
+.w3-display-left {
+    position: absolute;
+    top: 36%;
+    left: 0%;
+    transform: translate(0%,-50%);
+}
+
+quarter {
+    float: left;
+    width: 80%;
+}
+
+
+/*Text display in End video*/
+
+/* Add some content at the bottom of the video/page */
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+/***************************Hero Video End*********************/
+
+
+
+
+/****** Learn More Button*****/
+  .fa {
+    font-size: 50px !important;
+    color: #696767;
+    /*color: #00cc99;*/
+}
+.icon_title{
+    color: #0b495b;
+    font-size: 18px;
+}
+.center {
+    text-align: center;
+}
+
+.learn-button {
+    background-color: #056292;
+    color: white;
+    padding: 8px 20px;
+    margin: 50px 6px 67px;
+    border: none;
+    cursor: pointer;
+    width: 134px;
+
+}
+
+.learn-button:hover {
+    opacity: 0.8;
+}
+
+.dmv_req_button {
+    background-color: black;
+    color: white;
+    padding: 1px 0px;
+    margin: 1px 1px 1px;
+    border: none;
+    cursor: pointer;
+    width: 243px;
+    text-align: center;
+}
+
+.dmv_req_button p {
+    margin-top: 15px;
+}
+
+
+
+/**************** Section with Instructional Video**********/
+
+.instruction_container{
+    background-color:#f1f1f1;
+    padding: 19px 16px;
+
+}
+
+.instructions_row {
+    padding: 0px 16px;
+    display: flow-root;
+
+}
+
+.instructional_column{
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+.instructional_text {
+    padding: 12%;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 0;
+    padding: 56.25% 0 0 0; /* 100%/16*9 = 56.25% = Aspect ratio 16:9 */
+    overflow: hidden;
+    border: 0;
+}
+
+.video-wrapper video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* pricing page laptop section*/
+.laptop_container,
+.container-sm {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px
+}
+
+.laptop_img {
+    width: 100%;
+    border: 5px solid #f6f8f8;
+    box-shadow: 10px 10px 5px #0f1010;
+
+}
+
+@media (min-width: 601px) {
+    .instructional_column {
+        width: 49.99999%;
+        float: left;
+    }
+}
+
+@media (min-width: 960px) {
+
+    .hero::before {
+        left: 620px;
+        height: 800px;
+        width: 100%
+    }
+    .hero-inner {
+        display: flex
+    }
+    .hero-copy {
+        padding-right: 48px;
+        min-width: 512px
+    }
+    .hero-illustration {
+        padding-bottom: 0;
+        align-items:center
+    }
+    .hero-illustration img{
+        max-width: 600px;
+
+    }
+}
+
+@media (max-width: 959px) {
+    .laptop_img {
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+
+    }
+}
+
+
+
+@media (min-width: 481px) {
+    .laptop_container,
+    .container-sm {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+.laptop_container {
+    max-width: 1128px;
+
+}
+
+.container-sm {
+    max-width: 848px
+}
+
+.laptop_container .container-sm {
+    max-width: 800px;
+    padding-left: 0;
+    padding-right: 0
+}
+
+
+
+.mt-0 {
+    margin-top: 0
+}
+
+
+
+
+.laptop_button {
+    font-family: "poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    text-decoration: none !important;
+    background-color: #fff;
+    color: #318cb0 !important;
+    border: solid 1px #66CC99;
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 16px 50px;
+    height: 60px;
+    text-align: center;
+    align-items: center;
+    justify-content:center;
+}
+
+
+
+.button-primary {
+    color: #fff !important;
+    transition: background .25s ease
+}
+
+.button-primary {
+    background: #ff11a0;
+    background: linear-gradient(0deg, #2ee1e7 0, #26e2d7 100%)
+}
+
+.button-primary:hover {
+    background: #00cc99;
+    background: linear-gradient(180deg, #fa1eae, #b8107c 100%)
+}
+
+.button-primary.button-shadow::before {
+    box-shadow: 0 20px 30px rgba(37, 185, 154, 0.25)
+}
+
+.button-primary.button-shadow:hover::before {
+    box-shadow: 0 5px 10px rgba(37, 185, 154, 0.4)
+}
+
+.button-primary .button-sm.button-shadow::before {
+    box-shadow: 0 4px 16px rgba(37, 185, 154, 0.25)
+}
+
+.button-primary .button-sm.button-shadow:hover::before {
+    box-shadow: 0 4px 16px rgba(37, 185, 154, 0.4)
+}
+
+.button-block {
+    display: flex
+}
+
+
+
+.pricing_laptop_section {
+    position: relative;
+    text-align: center;
+    padding-top: 40px;
+
+}
+
+
+.hero-inner {
+    position: relative
+}
+
+.hero-title {
+    font-weight: 800
+}
+
+.hero-paragraph {
+    margin-bottom: 32px
+}
+
+@media (min-width: 960px) {
+    .pricing_laptop_section {
+        text-align: left;
+        padding-top: 92px;
+        padding-bottom: 80px
+    }
+    .pricing_laptop_section::before {
+        left: 620px;
+        height: 800px;
+        width: 100%
+    }
+    .hero-inner {
+        display: flex
+    }
+    .hero-copy {
+        padding-right: 48px;
+        min-width: 512px
+    }
+    .hero-illustration {
+        padding-bottom: 0;
+        align-items:center
+    }
+    .hero-illustration img{
+        max-width: 600px;
+
+    }
+}
+
+@media (min-width: 1025px) {
+    .pricing_laptop_section::before {
+        left: auto;
+        width: 43%
+    }
+    .hero-copy {
+        padding-right: 88px;
+        min-width: 552px
+    }
+}
+
+
+
+.body-wrap {
+    position: relative;
+    background: #0000005c;
+    margin: 20px 50px;
+
+    /*   overflow: hidden;
+       display: flex;
+       flex-direction: column;*/
+
+}
+
+
+
+@supports (-ms-ime-align: auto) {
+    .boxed-container {
+        box-shadow: 0 16px 48px rgba(31, 43, 53, 0.12)
+    }
+}
+
+/*Middle section pricing page End*/
+
+/****************************************Gallery Start**********************/
+
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+
+
+.gallery_container {
+    max-width: 100rem;
+    margin: 31px auto;
+    padding: 0 2rem 2rem;
+}
+
+.heading {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    padding: 3.5rem 0;
+    color: #1a1a1a;
+}
+
+.heading span {
+    display: block;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    /* Compensate for excess margin on outer gallery flex items */
+    margin: -1rem -1rem;
+}
+
+.gallery-item {
+    /* Minimum width of 24rem and grow to fit available space */
+    flex: 1 0 24rem;
+    /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+    margin: 1rem;
+    box-shadow: 1.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+.gallery-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+    transform: scale(1.15);
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling.
+
+*/
+
+@supports (display: grid) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+        grid-gap: 2rem;
+    }
+
+    .gallery,
+    .gallery-item {
+        margin: 0;
+    }
+}
+
+
+/*/////////////////////////////////////// Gallery End//////////////////////////*/
+
+
+
+/*/////////////////////////////////////// Servicing Page Start//////////////////////////*/
+.services_container{
+    width:100%;
+
+}
+.services_container h1{
+    font-size:50px;
+}
+.text_left{
+    padding:5% 0;
+    width:100%;
+    height:auto;
+    background-color:#fff;
+}
+.text_left .left{
+    padding:2% 0;
+    float:left;
+    width:50%;
+    display:inline-block;
+}
+.text_left .right{
+    width:50%;
+    display:inline-block;
+}
+.text_left .right img{
+    width:100%;
+}
+.text_left .left h1{
+    text-align:center;
+    color:#1EADFF;
+    margin:0 0 10px 0;
+}
+.text_left .left hr{
+    width:20%;
+    border-top:2px solid #000;
+    border-bottom:none;
+}
+.text_left .left p{
+    font-size:1rem;
+    margin:40px auto;
+    width:80%;
+    color: black;
+}
+
+.text_right{
+    padding:5% 0;
+    width:100%;
+    height:auto;
+    background-color:#fff;
+
+}
+.text_right .right{
+    padding:2% 0;
+    width:50%;
+
+    display:inline-block;
+}
+.text_right .left{
+    float:left;
+    width:50%;
+
+    display:inline-block;
+}
+.text_right .left img{
+    width:100%;
+}
+.text_right .right h1{
+    text-align:center;
+    color:#1EADFF;
+    margin:0 0 20px 0;
+}
+.text_right .right hr{
+    width:35%;
+    border-top:2px solid #000;
+    border-bottom:none;
+}
+.text_right .right p{
+    font-size:1rem;
+    margin:40px auto;
+    width:80%;
+    color: black;
+}
+/*/////////////////////////////////////// Servicing Page End//////////////////////////*/
+.top{
+    margin-top: 152px;
+    display: inline-block;
+}
+
+/* The alert message box */
+.alert {
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+/*///////////////////////////////////Contact Us Page////////////////////////////*/
+
+
+
+
+.headline_text {
+  margin-top: 192px ;
+}
+
+.headline_text h1, p {
+    color: #fff;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.headline_text h1 {
+    font-size: 2.2rem;
+}
+
+.headline_text h2 {
+    color: #000;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+/* BASIC SETUP */
+
+.page-wrapper {
+    width: 100%;
+    height: auto;
+}
+
+
+
+.headline {
+    width: 100%;
+    height: 50vh;
+    min-height: 350px;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.7)), url(images/student.jpg);
+    background-size: cover;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 52px;
+
+}
+
+.features {
+    width: 100%;
+    height: auto;
+    background-color: #f1f1f1;
+    display: flex;
+    padding: 50px 20px;
+    justify-content: space-around;
+}
+
+.feature-container {
+    flex-basis: 30%;
+    margin-top: 10px;
+}
+
+.feature-container p {
+    color: #000;
+    text-align: center;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.feature-container img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+/* Mobile Devices - Phones/Tablets */
+
+@media only screen and (max-width: 720px) {
+    .features {
+        flex-direction: column;
+        padding: 50px;
+    }
+
+    /* MOBILE HEADINGS */
+    h1 {
+        font-size: 1.9rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+}
+
+
+
+
+
+/*/////////////////////////////////////// Footer//////////////////////////*/
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+
+/* The footer is fixed to the bottom of the page */
+footer {
+    position:relative;
+    bottom: 0;
+    margin-top: 0;
+}
+
+
+.footer-distributed {
+    background-color: #000d32;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    /*font: bold 16px sans-serif;*/
+    padding: 20px 50px 60px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: #ffffff;
+    /*  font: normal 36px sans-serif;*/
+    margin: 15px 5px;
+}
+
+/* The company logo */
+.footer-distributed .footer-left img {
+    width: 30%;
+}
+
+.footer-distributed h3 span {
+    color: #c3b693;
+}
+
+/* Footer links */
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 21px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+.footer-distributed .footer-center {
+    width: 35%;
+}
+
+
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: #c3b693;
+    text-decoration: none;;
+}
+
+
+/* Footer Right */
+.footer-distributed .footer-right {
+    width: 30%;
+    margin: 5px 0;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 7px 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer-icons img {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+@media (max-width: 880px) {
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+}
+
+
+/*Footer End*/
+

@@ -1,0 +1,162 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-image: linear-gradient(to right top, #1c1f1f, #1b2c2e, #163942, #0c4658, #005370, #005371, #005471, #005472, #0b495b, #173d46, #1d3134, #1f2525);
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 100%;
+  min-height: 100%;
+  line-height: 1.5;
+  padding: 2.5em 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 70%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.grid-1-5 {
+  border: 2px solid #3c8cb5;
+  margin-top: 31px;
+  min-height: 400px;
+  padding: 1.25em;
+  position: relative;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  /*  @media screen and (min-width: 1120px) {
+      & {
+        width: 20%;
+      }
+      &:nth-child(odd), &:nth-child(3n+1) {
+        clear: none;
+      }
+    }*/
+}
+@media screen and (min-width: 700px) {
+  .grid-1-5 {
+    float: left;
+    width: 50%;
+  }
+  .grid-1-5:nth-child(odd) {
+    clear: left;
+  }
+}
+@media screen and (min-width: 800px) {
+  .grid-1-5 {
+    width: 33.3333333%;
+  }
+  .grid-1-5:nth-child(3n+1) {
+    clear: left;
+  }
+  .grid-1-5:nth-child(odd) {
+    clear: none;
+  }
+}
+
+.grid-1-5:hover {
+  background-color: #2C6078;
+  filter-gradient: #2C6078, #0E1211, vertical;
+  background-image: linear-gradient(to top, #1c1f1f, #1b2c2e, #163942, #0c4658, #005370, #005371, #005471, #005472, #0b495b, #173d46, #1d3134, #1f2525);
+  border-top: 2px solid #ec7a37;
+  border-bottom: 2px solid #ff4f69;
+  box-shadow: 0px 0px 10px 0px rgb(50, 50, 50);
+  transform: scale(1.025);
+  z-index: 2;
+}
+.grid-1-5:hover:before, .grid-1-5:hover:after {
+  content: "";
+  position: absolute;
+  background-color: rgb(246, 125, 53);
+  filter-gradient: #f67d35, #ff4f68, vertical;
+  background-image: linear-gradient(top, rgb(246, 125, 53) 0%, rgb(255, 79, 104) 100%);
+  top: -2px;
+  bottom: -2px;
+  width: 2px;
+}
+.grid-1-5:hover:before {
+  left: -2px;
+}
+.grid-1-5:hover:after {
+  right: -2px;
+}
+.grid-1-5:hover .pricing_button {
+  background-color: rgb(238, 122, 54);
+  filter-gradient: #ee7a36, #eb495d, horizontal;
+  background-image: linear-gradient(left, rgb(238, 122, 54) 0%, rgb(235, 73, 93) 100%);
+}
+
+h2, h3, p, ul {
+  margin: 0;
+}
+
+h2 {
+  font-size: 1em;
+  font-weight: 400;
+  margin: 0 0 0.5em;
+}
+
+h3 {
+  font-size: 1.5em;
+  letter-spacing: 0.0625em;
+  margin: 0 0 0.3333333333em;
+}
+
+p {
+  font-size: 0.875em;
+}
+
+p, ul {
+  margin: 0 0 1.5em;
+}
+
+ul {
+  color: #fafafa;
+  font-size: 0.75em;
+  list-style-type: none;
+  padding: 0;
+}
+ul li {
+  margin: 0 0 0.8333333333em;
+  color: rgb(122, 225, 255);
+}
+
+.pricing_button {
+  background-color: rgba(32, 168, 207, 0.5607843137);
+  border-radius: 20px;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 0.75em 1.5em;
+  position: absolute;
+  bottom: 1.25em;
+  left: 50%;
+  margin-left: -60px;
+  text-decoration: none;
+  width: 136px;
+}
+
+.uppercase, .pricing_button, h2 {
+  text-transform: uppercase;
+}
+
+sup, .small {
+  font-size: 0.6125em;
+}
+
+/*# sourceMappingURL=stles.css.map */
